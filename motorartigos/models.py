@@ -9,7 +9,7 @@ class Autor(models.Model):
 # o atributo id é automático
 # chave primária: imútavel, universal e única
     nome = models.CharField(max_length=100)
-    biografia = models.TextField()
+    biografia = models.TextField(blank = True)
     email = models.EmailField()
 #definir uma função = usar 'DEF':
     def __str__(self):
